@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --priVeryDarkMagenta: hsl(300, 43%, 22%);
+  --priSoftPink: hsl(333, 80%, 67%);
+  --neuDarkGrayishMagenta: hsl(303, 10%, 53%);
+  --neuLightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+}
+.container {
+  width: 280px;
+  margin: 50px auto;
+}
+/* side design start here */
+.side {
+  text-align: center;
+}
+.left-side h1 {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  color: var(--priVeryDarkMagenta);
+}
+.left-side p {
+  font-weight: 500;
+  line-height: 23px;
+  color: var(--neuDarkGrayishMagenta);
+}
+.right-side h4 {
+  font-weight: 700;
+  color: var(--priVeryDarkMagenta);
+}
+.right-side-top,
+.right-side-middle,
+.right-side-bottom {
+  margin: 20px 0;
+  display: flex;
+  padding: 10px 0;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: hsl(333, 80%, 70%, 0.1);
+}
+.right-side-top .top-img img,
+.right-side-middle .middle-img img,
+.right-side-bottom .bottom-img img {
+  padding: 0 3px 8px 0;
+}
+/* side design ends here */
+
+/* card design start here */
+.card-container {
+  padding-top: 10px;
+}
+.card {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 35px 20px;
+  border-radius: 10px;
+  background-color: var(--priVeryDarkMagenta);
+}
+.card-upper,
+.card-middle,
+.card-bottom {
+  display: flex;
+  align-items: center;
+}
+.card-upper .text,
+.card-middle .text,
+.card-bottom .text {
+  padding-left: 15px;
+}
+.card-upper .text h4,
+.card-middle .text h4,
+.card-bottom .text h4 {
+  font-weight: 500;
+  padding-bottom: 5px;
+  color: var(--White);
+}
+.card-upper .text .txt,
+.card-middle .text .txt,
+.card-bottom .text .txt {
+  font-weight: 500;
+  color: var(--priSoftPink);
+}
+.card .low-p {
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 20px;
+  line-height: 20px;
+  color: var(--White);
+}
+.card-upper img,
+.card-middle img,
+.card-bottom img {
+  width: 40px;
+  border-radius: 50%;
+}
+/* card design ends here */
+
+/* media query for tablet 768px */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 740px;
+    margin: 50px auto;
+  }
+  .side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .left-side {
+    flex-basis: 50%;
+    text-align: left;
+  }
+  .right-side {
+    flex-basis: 50%;
+  }
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    width: 240px;
+  }
+}
+
+/* media query for  large device   */
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+    margin: 50px auto;
+  }
+  .side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .left-side {
+    flex-basis: 40%;
+    text-align: left;
+  }
+  .left-side h1 {
+    font-size: 50px;
+  }
+  .right-side {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 60%;
+  }
+  .right-side-top,
+  .right-side-middle,
+  .right-side-bottom {
+    width: 400px;
+    margin: 10px 0;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .right-side-top .top-img,
+  .right-side-middle .middle-img,
+  .right-side-bottom .bottom-img {
+    padding: 5px 20px 0;
+  }
+  .right-side-top {
+    margin-right: 120px;
+  }
+  .right-side-middle {
+    margin-right: 60px;
+  }
+  .card-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+  }
+  .card {
+    width: 310px;
+  }
+  .middle {
+    margin-top: 60px;
+  }
+  .bottom {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
